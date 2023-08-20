@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/logo.webp" alt="" />
+        </div>
+
+        <div class="middle-section">
+          <ul class="nav-top-items">
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Pre-orders</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Support 24/7</a></li>
+          </ul>
+
+          <ul class="nav-bottom-items">
+            <li class="nav-dropdown-element">
+              <i class="fa-solid fa-desktop main-icon"></i>
+              <span href="#">Trending</span>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+            </li>
+            <li class="nav-dropdown-element">
+              <i class="fa-brands fa-playstation main-icon"></i>
+              <span href="#">Playstation</span>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+            </li>
+            <li class="nav-dropdown-element">
+              <i class="fa-brands fa-xbox main-icon"></i>
+              <span href="#">Xbox</span>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+            </li>
+            <li class="nav-dropdown-element">
+              <i class="fa-solid fa-rotate main-icon"></i>
+              <span href="#">Nintendo</span>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+            </li>
+            <li class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cart-and-user">
+          <i class="fa-light fa-cart-shopping"></i>
+          <i class="fa-regular fa-user user-icon"></i>
+        </div>
+      </nav>
+      <div id="show-nav-dropdown"></div>
+    </header>
+
+    <main>
+      <div id="section-hero">
+        <div class="info-container">
+          <p class="day-pill"><span> In 15 days </span></p>
+          <h1>Starfield Digital Premium Edition + Early Access</h1>
+          <div class="pricing">
+            <p class="discount"><span> -25% </span></p>
+            <p class="price"><span>74.89€</span></p>
+          </div>
+        </div>
+
+        <div class="button-container">+Early Access</div>
+      </div>
+
+      <section id="trending">
+        <div class="trending-head">
+          <h2>Trending</h2>
+          <button type="button">View all</button>
+        </div>
+
+        <div class="content-container">
+          <div class="content">
+            <div class="image-container">
+              <img src="/sengoku_banner.jpg" alt="sengoku" />
+              <span>-26%</span>
+            </div>
+
+            <div class="info-container">
+              <div class="title-container">
+                <button type="button" class="no-pill">DLC</button>
+                <p>Sengoku Dynasty</p>
+              </div>
+
+              <h6>19.99€</h6>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="image-container">
+              <img src="/horse_rance.jpeg" alt="sengoku" />
+              <span>-23%</span>
+            </div>
+
+            <div class="info-container">
+              <div class="title-container">
+                <button type="button">DLC</button>
+                <p>The Sims 4 Horse Ranch</p>
+              </div>
+
+              <h6>30.99€</h6>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="image-container">
+              <img src="/remnant.jpg" alt="remnant" />
+              <span>-30%</span>
+            </div>
+
+            <div class="info-container">
+              <div class="title-container">
+                <button type="button" class="no-pill">DLC</button>
+                <p>Remnant 2</p>
+              </div>
+
+              <h6>34.89€</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="nav-dropdown-container">
+        <div class="platfroms-section">
+          <div class="topbar">
+            <h5>Platforms</h5>
+            <a href="">View All</a>
+          </div>
+
+          <div class="platform-items-container">
+            <div class="platform-item">
+              <img src="/steam_logo.png" alt="platform-icon" />
+              <h6>Steam</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/ubisoft_logo.png" alt="platform-icon" />
+              <h6>Ubisoft Connect</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/ea_logo.png" alt="platform-icon" />
+              <h6>EA App</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/battle_logo.png" alt="platform-icon" />
+              <h6>Battle.net</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/Rockstar_Games_Logo.png" alt="platform-icon" />
+              <h6>Rockstar</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/gog_logo.png" alt="platform-icon" />
+              <h6>GOG.com</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/microsoft_logo.png" alt="platform-icon" />
+              <h6>MicrosoftStore</h6>
+            </div>
+
+            <div class="platform-item">
+              <img src="/epic_games.png" alt="platform-icon" />
+              <h6>Epic</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="platfroms-section pt-0">
+          <div class="topbar">
+            <h5>Prepaid cards</h5>
+            <a href="">View All</a>
+          </div>
+
+          <div class="gift-cards-container">
+            <a href="">
+              <div class="gift-card-item">
+                <img src="/steam_logo.png" alt="gift-card" />
+                <h6>Steam Gift Cards</h6>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="gift-card-item">
+                <img src="/ig_logo.jpg" alt="gift-card" />
+                <h6>IG Gift Cards</h6>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="gift-card-item">
+                <img src="/blizzard.png" alt="gift-card" />
+                <h6>Blizzard Gift Cards</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <script async type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.horizontal-vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#trending {
+  margin: 15px 15px;
+
+  @media only screen and (min-width: 620px) {
+    margin: 15px 100px;
+  }
+  @media only screen and (min-width: 768px) {
+    margin: 15px 80px;
+  }
+  @media only screen and (min-width: 1024px) {
+    margin: 15px 100px;
+  }
+
+  .trending-head {
+    @extend .horizontal-vertical-center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+
+    h3 {
+    }
+
+    button {
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+      background-color: #323232;
+      border: 2px solid #595959;
+      border-radius: 6px;
+      transition: all ease-in-out 0.1s;
+
+      &:hover {
+        background-color: #4c4c4c;
+      }
+
+      &:active {
+        border-color: #797979;
+      }
+    }
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+
+      .image-container {
+        position: relative;
+        width: 100%;
+
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          bottom: 6px;
+          padding: 6px;
+          background: #fe5713;
+          clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+          border-radius: 4px;
+        }
+      }
+
+      .info-container {
+        @extend .horizontal-vertical-center;
+        justify-content: space-between;
+        color: #d7d7d7;
+
+        .title-container {
+          @extend .horizontal-vertical-center;
+          gap: 6px;
+
+          button {
+            color: #8b8b8b;
+            font-size: 16px;
+            padding: 2px 4px;
+            font-size: 12px;
+            background-color: #323232;
+            border: 2px solid #8b8b8b;
+            border-radius: 4px;
+            transition: all ease-in-out 0.1s;
+
+            &:hover {
+              background-color: #4c4c4c;
+            }
+
+            &:active {
+              border-color: #676767;
+            }
+          }
+
+          .no-pill {
+            display: none;
+          }
+
+          p {
+            font-size: 13px;
+            font-weight: 600;
+          }
+        }
+
+        h6 {
+          font-size: 17px;
+          font-weight: 600;
+          padding-right: 1px;
+        }
+      }
+    }
+  }
+}

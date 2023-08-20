@@ -1,0 +1,113 @@
+.horizontal-vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header {
+  padding: 0 8px 25px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  nav {
+    @extend .horizontal-vertical-center;
+    justify-content: space-between;
+    margin: 0 50px;
+
+    .logo {
+      img {
+        width: 100%;
+        max-width: 120px;
+      }
+    }
+
+    .middle-section {
+      @extend .horizontal-vertical-center;
+      flex-direction: column;
+      gap: 8px;
+
+      .nav-top-items {
+        @extend .horizontal-vertical-center;
+        gap: 25px;
+        li {
+          a {
+            color: #b7b8ba;
+          }
+        }
+      }
+
+      .nav-bottom-items {
+        @extend .horizontal-vertical-center;
+        gap: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 25px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 30px;
+        backdrop-filter: blur(12.4px);
+        -webkit-backdrop-filter: blur(12.4px);
+
+        li {
+          @extend .horizontal-vertical-center;
+          gap: 6px;
+
+          //   i {
+          //   }
+
+          //   a {
+          //   }
+
+          .dropdown-arrow {
+            color: #60676c;
+          }
+
+          .main-icon {
+            margin-right: 4px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .search {
+          background: #fe5713;
+          padding: 20px;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .cart-and-user {
+      @extend .horizontal-vertical-center;
+      gap: 14px;
+
+      i {
+        padding: 10px;
+
+        &:hover {
+          border-radius: 100%;
+          background: rgb(255, 255, 255, 0.2);
+          cursor: pointer;
+        }
+      }
+
+      .user-icon {
+        color: #2f74e0;
+      }
+    }
+  }
+
+  #show-nav-dropdown {
+    position: fixed;
+    top: 100px;
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    // z-index: 15;
+  }
+}
